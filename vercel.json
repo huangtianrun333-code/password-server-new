@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/password.js",
-      "use": "@vercel/node"
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
+  "functions": {
+    "api/password.js": {
+      "maxDuration": 30
     },
-    {
-      "src": "api/add-password.js", 
-      "use": "@vercel/node"
+    "api/add-password.js": {
+      "maxDuration": 30
+    },
+    "api/health.js": {
+      "maxDuration": 10
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/password",
