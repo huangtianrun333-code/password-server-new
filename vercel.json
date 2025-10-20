@@ -12,18 +12,20 @@
   ],
   "routes": [
     {
+      "src": "/api/password",
+      "dest": "/api/password.js"
+    },
+    {
+      "src": "/api/add-password",
+      "dest": "/api/add-password.js"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }

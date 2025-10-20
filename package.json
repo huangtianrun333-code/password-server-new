@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
-    "build": "npm install && echo 'Vercel Node.js API server built successfully' && ls -la",
+    "build": "npm install && echo 'Vercel Node.js API server built successfully'",
     "start": "node server.js"
   },
   "keywords": ["password", "sync", "vercel", "mongodb", "api"],
