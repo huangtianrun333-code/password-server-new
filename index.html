@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码服务器 - 状态页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 密码服务器</h1>
+        <p class="status">✅ 服务器运行正常</p>
+        
+        <h2>API 端点</h2>
+        <div class="endpoint">
+            <strong>POST</strong> /api/password - 验证密码
+        </div>
+        <div class="endpoint">
+            <strong>POST</strong> /api/add-password - 添加临时密码
+        </div>
+        
+        <h2>使用说明</h2>
+        <p>这是一个密码验证服务器，支持管理员密码、永久用户密码和临时密码验证。</p>
+        
+        <h2>技术信息</h2>
+        <ul>
+            <li>框架: Node.js + Vercel Functions</li>
+            <li>数据库: MongoDB</li>
+            <li>部署平台: Vercel</li>
+        </ul>
+    </div>
+</body>
+</html>
