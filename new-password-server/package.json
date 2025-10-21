@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'Vercel Node.js API server built successfully'",
+    "build": "vercel build",
     "start": "vercel dev"
   },
   "keywords": ["password", "sync", "vercel", "mongodb", "api"],
