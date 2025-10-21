@@ -1,10 +1,19 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [
     {
-      "src": "api/*.js",
-      "use": "@vercel/node"
+      "src": "build.js",
+      "use": "@vercel/static-build"
     }
+  ],
+  "buildCommand": "node build.js",
+  "outputDirectory": ".vercel/output",
+  "cache": [
+    "node_modules/**/*",
+    "package-lock.json",
+    "build.js",
+    "api/**/*.js",
+    "lib/**/*.js"
   ],
   "routes": [
     {
