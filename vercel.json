@@ -2,30 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/password.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/add-password.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/health.js",
+      "src": "api/*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/password",
-      "dest": "/api/password.js"
-    },
-    {
-      "src": "/api/add-password",
-      "dest": "/api/add-password.js"
-    },
-    {
-      "src": "/api/health",
-      "dest": "/api/health.js"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     },
     {
       "src": "/(.*)",
